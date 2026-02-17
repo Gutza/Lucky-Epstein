@@ -54,20 +54,19 @@
             div.appendChild(iframe);
           }
           
-          document.getElementById("link").href = `#${current_index}`;
+          history.pushState(null, null, `#${current_index}`);
         }
         </script>
     </head>
 <body onload="load_hash()">
-    <a href="https://codepen.io/Gutza/debug/VYjOxrN" id="link" target="_blank" style="text-decoration: none">🔗</a>
     <button style="width: 5%" onClick='step(-1)'>«</button>
     <button style="width: 80%" onClick='update()'>I'm Feeling Lucky!</button>
     <button style="width: 5%" onClick='step(+1)'>»</button>
     <div id='content'>
       <br />
       <b>Read this through before acting!</b><br />
-      Start by pressing "I'm Feeling Lucky" above until you find something interesting. If you get an age verification page, click on any of the links at the top of any of the panels, verify your age there, then close that tab and come back here; click the button above again. Rinse and repeat.<br><br>
-      Use the anchor above to share links to this page (at the current video). Use buttons « and » to navigate to the video before or after the current one (they seem to be grouped by source).
+      Start by pressing "<i>I'm Feeling Lucky</i>" above until you find something interesting. If you get an age verification page, click on any of the links at the top of any of the panels, verify your age there, then close that tab and come back here; click the button above again. Rinse and repeat.<br><br>
+      Use buttons « and » to navigate to the video before or after the current one (they seem to be grouped by source).
     </div>
 </body>
 </html>
