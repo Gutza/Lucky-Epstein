@@ -59,9 +59,11 @@
         </script>
     </head>
 <body onload="load_hash()">
-    <button style="width: 5%" onClick='step(-1)'>«</button>
-    <button style="width: 80%" onClick='update()'>I'm Feeling Lucky!</button>
-    <button style="width: 5%" onClick='step(+1)'>»</button>
+    <div style="display: flex; gap: 0.5rem; width: 100%;">
+      <button style="flex: 1 1 0;" onClick='step(-1)'>«</button>
+      <button style="flex: 16 1 0;" onClick='update()'>I'm Feeling Lucky!</button>
+      <button style="flex: 1 1 0;" onClick='step(+1)'>»</button>
+    </div>
     <div id='content'>
       <br />
       <b>Read this through before acting!</b><br />
